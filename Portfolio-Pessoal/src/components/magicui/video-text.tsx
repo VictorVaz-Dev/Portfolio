@@ -82,7 +82,10 @@ export function VideoText({
   as: Component = "div",
 }: VideoTextProps) {
   const [svgMask, setSvgMask] = useState("");
-  const content = React.Children.toArray(children).join("");
+  const content = React.Children.toArray(children)
+  .map(child => (typeof child === "string" ? child : ""))
+  .join("");
+
 
   useEffect(() => {
     const updateSvgMask = () => {
