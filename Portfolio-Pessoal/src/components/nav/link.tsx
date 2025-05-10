@@ -1,7 +1,7 @@
 export const Link = () => {
     return (
       <nav className="space-x-4">
-        {["Sobre", "Projetos", "Contatos"].map((label) => (
+        {["Sobre", "Projetos", "Skills",  "Contatos"].map((label) => (
           <a
             key={label}
             href={`#${label.toLowerCase()}`} 

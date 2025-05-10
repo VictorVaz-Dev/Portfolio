@@ -47,7 +47,7 @@ export const Header = () => {
       {/* Menu Mobile */}
       <div className={`lg:hidden ${isOpen ? 'block' : 'hidden'} bg-[#0f0f0f] text-white`}>
         <div className="space-y-4 py-4 px-6">
-          {["Sobre", "Projetos", "Contatos"].map((label) => (
+          {["Sobre", "Projetos", "Skills", "Contatos"].map((label) => (
             <a
               key={label}
               href={`#${label.toLowerCase()}`}
