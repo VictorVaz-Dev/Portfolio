@@ -14,7 +14,7 @@ export const Header = () => {
       <div className="mx-auto max-w-7xl px-4 py-4 flex items-center justify-between">
         {/* Logo/Texto com Vídeo */}
         <div className="relative h-20 w-80 overflow-hidden">
-          <VideoText src="https://cdn.magicui.design/ocean-small.webm">Portfolio</VideoText>
+          <VideoText src="https://cdn.magicui.design/ocean-small.webm">Bem-vindo</VideoText>
         </div>
 
         {/* Botão Hamburguer */}

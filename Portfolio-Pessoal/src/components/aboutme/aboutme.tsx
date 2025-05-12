@@ -31,10 +31,10 @@ export const Aboutme = () => {
           <div className="mt-6 text-white text-[0.95rem] leading-relaxed">
             <p>
               Tenho formação em Análise e Desenvolvimento de Sistemas e entre outras faculdades,
-              possuo experiências em tecnologias como{" "}
+              possuo experiência em tecnologias como{" "}
               <span className="font-semibold text-[#33cccc]">Tailwind</span>,{" "}
               <span className="font-semibold text-[#33cccc]">Vite</span>,{" "}
-              <span className="font-semibold text-[#33cccc]">Firebase</span> e outras tecnologias.<br/><br/>
+              <span className="font-semibold text-[#33cccc]">Firebase</span> e entre outras mais.<br/><br/>
               Gosto de criar aplicações modernas, responsivas e integradas com
               APIs e bancos de dados em tempo real.<br/><br/>
 
