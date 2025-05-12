@@ -5,7 +5,7 @@ import ImgCarrinho  from "../../assets/projetos/carrinho/carrinho.png"
 
 export const Projetos = () => {
     return(
-        <div className="md:mt-[10vh] flex flex-col justify-center items-center">
+        <div className="md:mt-[10vh] flex flex-col justify-center items-center" id="projetos">
             <BoxReveal boxColor={"#33cccc"} duration={0.8}>
                 <div className="m-auto justify-center items-center">
                     <h1 className="text-[3.5rem] text-white font-semibold">Meus Projetos</h1>
