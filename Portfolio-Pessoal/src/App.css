@@ -1,3 +1,7 @@
+html{
+    scroll-behavior: smooth !important;
+}
+
 body{
     background-color: #272d2e;
     font-family: Arial, Helvetica, sans-serif;
