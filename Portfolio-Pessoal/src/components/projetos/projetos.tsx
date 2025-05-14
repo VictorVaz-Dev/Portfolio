@@ -1,6 +1,7 @@
 import { BoxReveal } from "../../components/magicui/box-reveal"
-import { Marquee } from "../../components/magicui/marquee"
 import ImgCarrinho  from "../../assets/projetos/carrinho/carrinho.png"
+import Tilt from 'react-parallax-tilt'
+
 
 
 export const Projetos = () => {
@@ -13,11 +14,11 @@ export const Projetos = () => {
                 </div>                
             </BoxReveal>
             <BoxReveal boxColor={"#33cccc"} duration={0.8}>
-                <div className="">
-                    <Marquee pauseOnHover>
-                            <div className="p-4 w-[400px] bg-[#2e3334] text-white inset-shadow-sm shadow-white">
+                <div className="swiper">
+                        <Tilt>
+                         <div className="p-4 w-[400px] bg-[#2e3334] text-white inset-shadow-sm shadow-white">
                                 <img src={ImgCarrinho} alt="foto do projeto carrinho" className="mb-[4vh]" />
-                                <p>Este projeto é um site de carrinho de compras funcional desenvolvido com HTML, CSS e JavaScript puro, com interface responsiva e interativa. Ele permite adicionar, visualizar e remover produtos do carrinho de forma dinâmica, sendo ideal para quem está aprendendo a criar funcionalidades de e-commerce sem depender de frameworks. O código é organizado, de fácil entendimento, e pode ser executado diretamente em navegadores. Além disso, o projeto está conectado ao Firebase, permitindo armazenar os dados do carrinho em tempo real.</p>
+                                <p>Projeto de carrinho de compras funcional feito com HTML, CSS e JavaScript puro. Possui interface responsiva, permite gerenciar produtos no carrinho e salva os dados em tempo real com Firebase. Ideal para quem está aprendendo e-commerce sem frameworks.</p>
                                 <div className="flex flex-row gap-4 mt-[2vh]">
                                     <div>
                                         <a href="https://greenfarm-nu.vercel.app/index.html" target="_blank" className="cursor-pointer bg-white text-black p-[10px] rounded-[10%] flex flex-row items-center justify-center"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 256 222"><path fill="currentColor" d="M128 0L256 222H0L128 0z"/></svg>
@@ -32,9 +33,7 @@ export const Projetos = () => {
                                     </div>
                                 </div>
                             </div>
-                    </Marquee>
-
-                    
+                        </Tilt>
                 </div>
             </BoxReveal>
         </div>
