@@ -8,23 +8,23 @@ export const Skills = () =>{
             <div className="flex justify-center items-center">
                 <div className="gap-10 text-white">
                     <Marquee pauseOnHover>
-                        <div className="relative w-[400px] p-4 rounded-lg border-2 border-[#33cccc] bg-gray-900 text-white font-semibold flex justify-center items-center">
+                        <div className="relative w-[400px] p-4 rounded-lg border-2 border-gray-950 bg-gray-950 text-white font-semibold flex justify-center items-center">
                             <p>React.js (Vite, Native e Next)</p>
                         </div>
-                        <div className="relative w-[400px] p-4 rounded-lg border-2 border-[#33cccc] bg-gray-900 text-white font-semibold flex justify-center items-center">
+                        <div className="relative w-[400px] p-4 rounded-lg border-2 border-gray-950 bg-gray-950 text-white font-semibold flex justify-center items-center">
                             <p>SQL Server e Firebase</p>
                         </div>
-                        <div className="relative w-[400px] p-4 rounded-lg border-2 border-[#33cccc] bg-gray-900 text-white font-semibold flex justify-center items-center">
+                        <div className="relative w-[400px] p-4 rounded-lg border-2 border-gray-950 bg-gray-950 text-white font-semibold flex justify-center items-center">
                             <p>Plataformas Low code (Wordpress e Zoey)</p>
                         </div>
  
-                        <div className="relative w-[400px] p-4 rounded-lg border-2 border-[#33cccc] bg-gray-900 text-white font-semibold flex justify-center items-center">
+                        <div className="relative w-[400px] p-4 rounded-lg border-2 border-gray-950 bg-gray-950 text-white font-semibold flex justify-center items-center">
                             <p>Pacote Office</p>
                         </div>
-                        <div className="relative w-[400px] p-4 rounded-lg border-2 border-[#33cccc] bg-gray-900 text-white font-semibold flex justify-center items-center ">
+                        <div className="relative w-[400px] p-4 rounded-lg border-2 border-gray-950 bg-gray-950 text-white font-semibold flex justify-center items-center ">
                             <p>Liguagem C e C++</p>
                         </div>
-                        <div className="relative w-[400px] p-4 rounded-lg border-2 border-[#33cccc] bg-gray-900 text-white font-semibold flex justify-center items-center">
+                        <div className="relative w-[400px] p-4 rounded-lg border-2 border-gray-950 bg-gray-950 text-white font-semibold flex justify-center items-center">
                             <p>Python</p>
                         </div>
                     </Marquee>
