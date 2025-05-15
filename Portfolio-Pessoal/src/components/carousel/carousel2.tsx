@@ -293,8 +293,8 @@ export default function Carousel({
                                                 key={i}
                                                 onClick={btn.onClick}
                                                 className={`px-4 py-2 text-sm rounded font-medium flex items-center justify-center ${btn.variant === "secondary"
-                                                        ? "bg-white text-black font-bold hover:cursor-pointer"
-                                                        : "bg-cyan-500 text-white font-bold hover:cursor-pointer"
+                                                        ? "bg-white text-black font-bold hover:cursor-pointer transition-transform duration-200 hover:scale-115"
+                                                        : "bg-cyan-500 text-white font-bold hover:cursor-pointer transition-transform duration-200 hover:scale-115"
                                                     }`}
                                             >
                                                 {btn.label}
