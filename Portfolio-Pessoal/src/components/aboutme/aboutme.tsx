@@ -30,7 +30,7 @@ export const Aboutme = () => {
         <BoxReveal boxColor={"#33cccc"} duration={0.8}>
           <div className="mt-6 text-white text-[0.95rem] leading-relaxed">
             <p>
-              Tenho formação em Análise e Desenvolvimento de Sistemas e entre outras faculdades,
+              Tenho formação em Sistemas para internet e entre outras faculdades,
               possuo experiência em tecnologias como{" "}
               <span className="font-semibold text-[#33cccc]">Tailwind</span>,{" "}
               <span className="font-semibold text-[#33cccc]">Vite</span>,{" "}
