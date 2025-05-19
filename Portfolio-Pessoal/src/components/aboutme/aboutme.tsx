@@ -15,7 +15,7 @@ function DownloadCV() {
 
 export const Aboutme = () => {
   return (
-    <div id="sobre" className="flex flex-col md:flex-row justify-center items-center gap-x-20 md:mt-[10vh]">
+    <div id="sobre" className="flex flex-col md:flex-row justify-center items-center gap-x-20 md:mt-[10vh] m-auto">
       <div className="size-full max-w-lg items-center justify-center overflow-hidden pt-8">
         <BoxReveal boxColor={"#33cccc"} duration={0.8}>
           <p className="text-[3.5rem] text-white font-semibold">Sobre Mim<span className=" font-semibold text-[#33cccc]">.</span></p>
