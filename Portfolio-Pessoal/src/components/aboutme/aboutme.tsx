@@ -2,10 +2,12 @@ import { BoxReveal } from "../../components/magicui/box-reveal";
 import { AnimatedSubscribeButton } from "../../components/magicui/animated-subscribe-button";
 import { CheckIcon, ChevronRightIcon } from "lucide-react";
 import imagemDePerfil from "../../assets/fotoPerfil/imagem-de-perfil.jpeg";
+import VictorCV from "../../assets/curriculum/Curriculo_Victor_vaz_2025.pdf"
+
 
 function DownloadCV() {
   const link = document.createElement("a");
-  link.href = "../../"; 
+  link.href = VictorCV; 
   link.download = "curriculo-victor.pdf"; 
   document.body.appendChild(link); 
   link.click(); 

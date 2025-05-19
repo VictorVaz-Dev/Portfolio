@@ -2,7 +2,7 @@ import { BoxReveal } from "../../components/magicui/box-reveal"
 import Carousel from "../carousel/carousel"
 import Carousel2 from "../carousel/carousel2"
 
-  
+
 
 
 export const Projetos = () => {
@@ -25,17 +25,17 @@ export const Projetos = () => {
                             loop={true}
                             round={false}
                         />
-                        </div>
-                        <div>
-                            <Carousel2
-                                baseWidth={400}
-                                autoplay={true}
-                                autoplayDelay={3000}
-                                pauseOnHover={true}
-                                loop={true}
-                                round={false}
-                            />  
-                        </div>
+                    </div>
+                    <div>
+                        <Carousel2
+                            baseWidth={400}
+                            autoplay={true}
+                            autoplayDelay={3000}
+                            pauseOnHover={true}
+                            loop={true}
+                            round={false}
+                        />
+                    </div>
                 </div>
             </BoxReveal>
         </div>
