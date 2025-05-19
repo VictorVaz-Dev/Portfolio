@@ -1,7 +1,6 @@
 import { useEffect, useState, useRef } from "react";
 import { motion, useMotionValue, useTransform } from "framer-motion";
 import type { PanInfo } from "framer-motion";
-import ImgCarrinho from "../../assets/projetos/carrinho/carrinho.png";
 import LoginESG from "../../assets/projetos/ESG/loginESG.png"
 
 // replace icons with your own if needed
@@ -40,7 +39,7 @@ const DEFAULT_ITEMS: CarouselItem[] = [
     {
         title: "Plataforma de Cadastro",
         description:
-            "Plataforma web desenvolvida com HTML, CSS e JavaScript, usando Vite. Possui interface responsiva e interativa, com busca de endereço via API do ViaCEP. Os dados dos clientes são salvos em tempo real no Firebase, ideal para aprendizado de aplicações full stack.<br/> Tecnologias usadas: Vite, Firebase e APi ViaCEP",
+            "Plataforma web desenvolvida com HTML, CSS e JavaScript, usando Vite. Possui interface responsiva e interativa, com busca de endereço via API do ViaCEP. Os dados dos clientes são salvos em tempo real no Firebase, ideal para aprendizado de aplicações full stack. Tecnologias usadas: React Vite, Firebase e APi ViaCEP",
         id: 1,
         icon: <FiShoppingCart className="h-[16px] w-[16px] text-white" />,
         imageUrl: LoginESG,

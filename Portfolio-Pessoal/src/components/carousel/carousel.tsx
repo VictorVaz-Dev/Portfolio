@@ -39,7 +39,7 @@ const DEFAULT_ITEMS: CarouselItem[] = [
     {
         title: "Carrinho de compras",
         description:
-            "Projeto de carrinho de compras funcional feito com HTML, CSS e JavaScript puro. Possui interface responsiva, permite gerenciar produtos no carrinho e salva os dados em tempo real com Firebase. Ideal para quem está aprendendo e-commerce sem frameworks.",
+            "Projeto de carrinho de compras funcional feito com HTML, CSS e JavaScript puro. Possui interface responsiva, permite gerenciar produtos no carrinho e salva os dados em tempo real com Firebase. Ideal para quem está aprendendo e-commerce sem frameworks. Tecnologias usadas: HTML, CSS, JS e Firebase",
         id: 1,
         icon: <FiShoppingCart className="h-[16px] w-[16px] text-white" />,
         imageUrl: ImgCarrinho,
