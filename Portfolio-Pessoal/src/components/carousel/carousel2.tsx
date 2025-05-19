@@ -2,6 +2,7 @@ import { useEffect, useState, useRef } from "react";
 import { motion, useMotionValue, useTransform } from "framer-motion";
 import type { PanInfo } from "framer-motion";
 import ImgCarrinho from "../../assets/projetos/carrinho/carrinho.png";
+import LoginESG from "../../assets/projetos/ESG/loginESG.png"
 
 // replace icons with your own if needed
 import {
@@ -37,25 +38,25 @@ export interface CarouselProps {
 
 const DEFAULT_ITEMS: CarouselItem[] = [
     {
-        title: "Carrinho de compras",
+        title: "Plataforma de Cadastro",
         description:
-            "Projeto de carrinho de compras funcional feito com HTML, CSS e JavaScript puro. Possui interface responsiva, permite gerenciar produtos no carrinho e salva os dados em tempo real com Firebase. Ideal para quem está aprendendo e-commerce sem frameworks.",
+            "Plataforma web desenvolvida com HTML, CSS e JavaScript, usando Vite. Possui interface responsiva e interativa, com busca de endereço via API do ViaCEP. Os dados dos clientes são salvos em tempo real no Firebase, ideal para aprendizado de aplicações full stack.",
         id: 1,
         icon: <FiShoppingCart className="h-[16px] w-[16px] text-white" />,
-        imageUrl: ImgCarrinho,
+        imageUrl: LoginESG,
         buttons: [
             {
                 label: "Repositório",
                 icon: <FiCoffee className="ml-2 inline-block h-4 w-4" />,
                 onClick: () =>
-                    window.open("https://github.com/VictorVaz-Dev/Carrinho", "_blank"),
+                    window.open("https://github.com/VictorVaz-Dev/Plataforma-ESG", "_blank"),
                 variant: "primary",
             },
             {
                 label: "Ver site",
                 icon: <FiAirplay className="ml-2 inline-block h-4 w-4" />,
                 onClick: () =>
-                    window.open("https://greenfarm-nu.vercel.app/index.html", "_blank"),
+                    window.open("https://plataforma-esg-inky.vercel.app", "_blank"),
                 variant: "secondary",
             },
         ],
