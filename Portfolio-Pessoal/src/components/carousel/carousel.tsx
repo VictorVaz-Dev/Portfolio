@@ -3,6 +3,7 @@ import { motion, useMotionValue, useTransform } from "framer-motion";
 import type { PanInfo } from "framer-motion";
 import ImgCarrinho from "../../assets/projetos/carrinho/carrinho.png";
 import ImgLista from "../../assets/projetos/ToDoList/lista-de-afazeres.png"
+import LoginESG from "../../assets/projetos/ESG/loginESG.png"
 
 // replace icons with your own if needed
 import {
@@ -80,6 +81,30 @@ const DEFAULT_ITEMS: CarouselItem[] = [
                 icon: <FiAirplay className="ml-2 inline-block h-4 w-4" />,
                 onClick: () =>
                     window.open("https://to-do-list-iota-blue.vercel.app/", "_blank"),
+                variant: "secondary",
+            },
+        ],
+    },
+    {
+        title: "Plataforma de Cadastro",
+        description:
+            "Plataforma web desenvolvida com HTML, CSS e JavaScript, usando Vite. Possui interface responsiva e interativa, com busca de endereço via API do ViaCEP. Os dados dos clientes são salvos em tempo real no Firebase, ideal para aprendizado de aplicações full stack. Tecnologias usadas: React Vite, Firebase e APi ViaCEP",
+        id: 1,
+        icon: <FiShoppingCart className="h-[16px] w-[16px] text-white" />,
+        imageUrl: LoginESG,
+        buttons: [
+            {
+                label: "Repositório",
+                icon: <FiCoffee className="ml-2 inline-block h-4 w-4" />,
+                onClick: () =>
+                    window.open("https://github.com/VictorVaz-Dev/Plataforma-ESG", "_blank"),
+                variant: "primary",
+            },
+            {
+                label: "Ver site",
+                icon: <FiAirplay className="ml-2 inline-block h-4 w-4" />,
+                onClick: () =>
+                    window.open("https://plataforma-esg-inky.vercel.app", "_blank"),
                 variant: "secondary",
             },
         ],
