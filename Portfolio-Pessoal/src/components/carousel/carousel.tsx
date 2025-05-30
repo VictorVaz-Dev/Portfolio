@@ -2,6 +2,7 @@ import { useEffect, useState, useRef } from "react";
 import { motion, useMotionValue, useTransform } from "framer-motion";
 import type { PanInfo } from "framer-motion";
 import ImgCarrinho from "../../assets/projetos/carrinho/carrinho.png";
+import ImgLista from "../../assets/projetos/ToDoList/lista-de-afazeres.png"
 
 // replace icons with your own if needed
 import {
@@ -61,22 +62,24 @@ const DEFAULT_ITEMS: CarouselItem[] = [
         ],
     },
     {
-        title: "Animations",
-        description: "Smooth animations for your projects.",
+        title: "Lista de afazeres",
+        description: "Aplicação web para gerenciamento de tarefas, desenvolvida com React, TypeScript e Tailwind CSS. Permite adicionar, editar, remover e filtrar tarefas, com armazenamento em tempo real no Firebase Firestore. Ideal para praticar desenvolvimento full stack com foco em produtividade.",
         id: 2,
         icon: <FiCircle className="h-[16px] w-[16px] text-white" />,
-        imageUrl: "/images/text-animations.jpg",
+        imageUrl: ImgLista,
         buttons: [
             {
-                label: "Learn More",
+                label: "Repositório",
                 icon: <FiCoffee className="ml-2 inline-block h-4 w-4" />,
-                onClick: () => alert("Learn more clicked"),
+                onClick: () =>
+                    window.open("https://github.com/VictorVaz-Dev/To-do-list", "_blank"),
                 variant: "primary",
             },
             {
-                label: "Demo",
+                label: "Ver site",
                 icon: <FiAirplay className="ml-2 inline-block h-4 w-4" />,
-                onClick: () => alert("Demo clicked"),
+                onClick: () =>
+                    window.open("https://to-do-list-iota-blue.vercel.app/", "_blank"),
                 variant: "secondary",
             },
         ],
