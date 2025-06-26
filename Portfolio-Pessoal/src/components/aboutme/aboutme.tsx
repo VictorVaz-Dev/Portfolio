@@ -36,7 +36,7 @@ export const Aboutme = () => {
               possuo experiência em tecnologias como{" "}
               <span className="font-semibold text-[#33cccc]">Tailwind</span>,{" "}
               <span className="font-semibold text-[#33cccc]">Vite</span>,{" "}
-              <span className="font-semibold text-[#33cccc]">Firebase</span> e entre outras mais.<br/><br/>
+              <span className="font-semibold text-[#33cccc]">Firebase</span>, entre outras mais.<br/><br/>
               Gosto de criar aplicações modernas, responsivas e integradas com
               APIs e bancos de dados em tempo real.<br/><br/>
 

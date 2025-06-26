@@ -10,12 +10,10 @@ export const Home = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Defina o tempo de exibição do loader (por exemplo, 4 segundos)
     const timer = setTimeout(() => {
-      setLoading(false); // Depois de 4 segundos, altera o estado para false, escondendo o loader
+      setLoading(false); 
     }, 4000);
 
-    // Limpeza do timer quando o componente for desmontado
     return () => clearTimeout(timer);
   }, []);
 
