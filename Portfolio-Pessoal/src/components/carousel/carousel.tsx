@@ -252,6 +252,7 @@ export default function Carousel({
                 ...(round && { height: `${baseWidth}px` }),
             }}
         >
+            <p className="text-white flex justify-center items-center mt-[-12px]">Arraste para o lado  😀👉🏾</p>
             <motion.div
                 className="flex"
                 drag="x"
