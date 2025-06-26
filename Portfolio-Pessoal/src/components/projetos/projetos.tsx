@@ -29,7 +29,7 @@ export const Projetos = () => {
                         <div style={{ height: '600px', position: 'relative' }}>
                             <Carousel
                                 baseWidth={400}
-                                autoplay={true}
+                                autoplay={false}
                                 autoplayDelay={4000}
                                 pauseOnHover={true}
                                 loop={true}
