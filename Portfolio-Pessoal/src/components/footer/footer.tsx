@@ -36,7 +36,7 @@ export const Footer = () =>{
 
                 {/* Copyright */}
                 <p className="text-sm text-white">
-                &copy; {new Date().getFullYear()} Victor Vaz. Obrigado pelo seu tempo!
+                &copy; {new Date().getFullYear()} Victor Vaz. Obrigado pelo seu tempo, portfólio liberado para uso !
                 </p>
             </div>
         </div>

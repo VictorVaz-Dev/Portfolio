@@ -1,0 +1,21 @@
+{
+  "nav": {
+    "about": "About",
+    "projects": "Projects",
+    "skills": "Skills",
+    "contact": "Contact"
+  },
+  "toggle": {
+    "en": "English",
+    "pt": "Português"
+  },
+  "about":{
+    "about":"About me",
+    "intro":"Hello, my name is Victor Vaz and i am currently a ",
+    "developer":"Front-end Developer",
+    "college":"i have a degree in internet systems, systems analysis and development and another knowledges, i worked in tecnologies like:",
+    "another":"and",
+    "more":"a lot of more"
+  }
+}
+  

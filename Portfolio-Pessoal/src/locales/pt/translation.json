@@ -1,0 +1,20 @@
+{
+  "nav": {
+    "about": "Sobre",
+    "projects": "Projetos",
+    "skills": "Habilidades",
+    "contact": "Contato"
+  },
+  "toggle": {
+    "en": "English",
+    "pt": "Português"
+  },
+  "about":{
+    "about":"Sobre mim",
+    "intro":"Olá, me chamo Victor Vaz e atualmente sou ",
+    "developer":"Desenvolvedor Front-end",
+    "college":"Tenho formação em Sistemas para internet, Análise e desenvolvimento de sistemas e entre outros conhecimentos, possuo experiência em tecnologias como",
+    "another":" e entre",
+    "more":"outras mais"
+  }
+}
