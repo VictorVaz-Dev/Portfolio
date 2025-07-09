@@ -27,6 +27,9 @@ export const Header = () => {
 
         {/* Botão Hamburguer */}
         <div className="lg:hidden">
+          <button onClick={toggleLanguage} className="mt-2 px-2 py-2 bg-cyan-300 text-white rounded hover:cursor-pointer">
+            {t(i18n.language === 'pt' ? 'toggle.en' : 'toggle.pt')}
+          </button>
           <button onClick={toggleMenu} className="text-white focus:outline-none cursor-pointer">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -54,9 +57,6 @@ export const Header = () => {
 
       {/* Menu Mobile */}
       <div className={`lg:hidden ${isOpen ? 'block' : 'hidden'} bg-[#0f0f0f] text-white`}>
-        <button onClick={toggleLanguage} className="mt-2 px-2 py-2 bg-cyan-300 text-white rounded hover:cursor-pointer">
-          {t(i18n.language === 'pt' ? 'toggle.en' : 'toggle.pt')}
-        </button>
         <div className="space-y-4 py-4 px-6">
           {navItems.map((key) => (
             <a

@@ -1,9 +1,10 @@
 import { useEffect, useState, useRef } from "react";
 import { motion, useMotionValue, useTransform } from "framer-motion";
 import type { PanInfo } from "framer-motion";
+import { useTranslation } from 'react-i18next';
 import ImgCarrinho from "../../assets/projetos/carrinho/carrinho.png";
-import ImgLista from "../../assets/projetos/ToDoList/lista-de-afazeres.png"
-import LoginESG from "../../assets/projetos/ESG/loginESG.png"
+import ImgLista from "../../assets/projetos/ToDoList/lista-de-afazeres.png";
+import LoginESG from "../../assets/projetos/ESG/loginESG.png";
 
 import {
     FiCircle,
@@ -38,71 +39,64 @@ export interface CarouselProps {
 
 const DEFAULT_ITEMS: CarouselItem[] = [
     {
-        title: "Carrinho de compras",
-        description:
-            "Projeto de carrinho de compras funcional feito com HTML, CSS e JavaScript puro. Possui interface responsiva, permite gerenciar produtos no carrinho e salva os dados em tempo real com Firebase. Ideal para quem está aprendendo e-commerce sem frameworks. Tecnologias usadas: HTML, CSS, JS e Firebase",
+        title: "project1.title",
+        description: "project1.subtitle",
         id: 1,
         icon: <FiShoppingCart className="h-[16px] w-[16px] text-white" />,
         imageUrl: ImgCarrinho,
         buttons: [
             {
-                label: "Repositório",
+                label: "carousel.repo",
                 icon: <FiCoffee className="ml-2 inline-block h-4 w-4" />,
-                onClick: () =>
-                    window.open("https://github.com/VictorVaz-Dev/Carrinho", "_blank"),
+                onClick: () => window.open("https://github.com/VictorVaz-Dev/Carrinho", "_blank"),
                 variant: "primary",
             },
             {
-                label: "Ver site",
+                label: "carousel.site",
                 icon: <FiAirplay className="ml-2 inline-block h-4 w-4" />,
-                onClick: () =>
-                    window.open("https://greenfarm-nu.vercel.app/index.html", "_blank"),
+                onClick: () => window.open("https://greenfarm-nu.vercel.app/index.html", "_blank"),
                 variant: "secondary",
             },
         ],
     },
     {
-        title: "Lista de afazeres",
-        description: "Aplicação web para gerenciamento de tarefas, desenvolvida com React, TypeScript e Tailwind CSS. Permite adicionar, editar, remover e filtrar tarefas, com armazenamento em tempo real no Firebase Firestore. Ideal para praticar desenvolvimento full stack com foco em produtividade.",
+        title: "project2.title",
+        description: "project2.subtitle",
         id: 2,
         icon: <FiCircle className="h-[16px] w-[16px] text-white" />,
         imageUrl: ImgLista,
         buttons: [
             {
-                label: "Repositório",
+                label: "carousel.repo",
                 icon: <FiCoffee className="ml-2 inline-block h-4 w-4" />,
-                onClick: () =>
-                    window.open("https://github.com/VictorVaz-Dev/To-do-list", "_blank"),
+                onClick: () => window.open("https://github.com/VictorVaz-Dev/To-do-list", "_blank"),
                 variant: "primary",
             },
             {
-                label: "Ver site",
+                label: "carousel.site",
                 icon: <FiAirplay className="ml-2 inline-block h-4 w-4" />,
-                onClick: () =>
-                    window.open("https://to-do-list-iota-blue.vercel.app/", "_blank"),
+                onClick: () => window.open("https://to-do-list-iota-blue.vercel.app/", "_blank"),
                 variant: "secondary",
             },
         ],
     },
     {
-        title: "Plataforma de Cadastro",
-        description:"Plataforma web desenvolvida com HTML, CSS e JavaScript, usando Vite. Possui interface responsiva e interativa, com busca de endereço via API do ViaCEP. Os dados dos clientes são salvos em tempo real no Firebase, ideal para aprendizado de aplicações full stack. Tecnologias usadas: React Vite, Firebase e APi ViaCEP",
+        title: "project3.title",
+        description: "project3.subtitle",
         id: 3,
         icon: <FiShoppingCart className="h-[16px] w-[16px] text-white" />,
         imageUrl: LoginESG,
         buttons: [
             {
-                label: "Repositório",
+                label: "carousel.repo",
                 icon: <FiCoffee className="ml-2 inline-block h-4 w-4" />,
-                onClick: () =>
-                    window.open("https://github.com/VictorVaz-Dev/Plataforma-ESG", "_blank"),
+                onClick: () => window.open("https://github.com/VictorVaz-Dev/Plataforma-ESG", "_blank"),
                 variant: "primary",
             },
             {
-                label: "Ver site",
+                label: "carousel.site",
                 icon: <FiAirplay className="ml-2 inline-block h-4 w-4" />,
-                onClick: () =>
-                    window.open("https://plataforma-esg-inky.vercel.app", "_blank"),
+                onClick: () => window.open("https://plataforma-esg-inky.vercel.app", "_blank"),
                 variant: "secondary",
             },
         ],
@@ -123,6 +117,7 @@ export default function Carousel({
     loop = false,
     round = false,
 }: CarouselProps): JSX.Element {
+    const { t } = useTranslation();
     const containerPadding = 16;
     const itemWidth = baseWidth - containerPadding * 2;
     const trackItemOffset = itemWidth + GAP;
@@ -152,26 +147,14 @@ export default function Carousel({
         if (autoplay && (!pauseOnHover || !isHovered)) {
             const timer = setInterval(() => {
                 setCurrentIndex((prev) => {
-                    if (prev === items.length - 1 && loop) {
-                        return prev + 1; // Animate to clone.
-                    }
-                    if (prev === carouselItems.length - 1) {
-                        return loop ? 0 : prev;
-                    }
+                    if (prev === items.length - 1 && loop) return prev + 1;
+                    if (prev === carouselItems.length - 1) return loop ? 0 : prev;
                     return prev + 1;
                 });
             }, autoplayDelay);
             return () => clearInterval(timer);
         }
-    }, [
-        autoplay,
-        autoplayDelay,
-        isHovered,
-        loop,
-        items.length,
-        carouselItems.length,
-        pauseOnHover,
-    ]);
+    }, [autoplay, autoplayDelay, isHovered, loop, items.length, carouselItems.length, pauseOnHover]);
 
     const effectiveTransition = isResetting ? { duration: 0 } : SPRING_OPTIONS;
 
@@ -184,52 +167,16 @@ export default function Carousel({
         }
     };
 
-    const handleDragEnd = (
-        _: MouseEvent | TouchEvent | PointerEvent,
-        info: PanInfo
-    ): void => {
+    const handleDragEnd = (_: MouseEvent | TouchEvent | PointerEvent, info: PanInfo): void => {
         const offset = info.offset.x;
         const velocity = info.velocity.x;
 
         if (offset < -DRAG_BUFFER || velocity < -VELOCITY_THRESHOLD) {
-            // Avançar
-            setCurrentIndex((prev) => {
-                const next = prev + 1;
-                if (loop) {
-                    return next >= carouselItems.length ? 0 : next;
-                }
-                return Math.min(next, carouselItems.length - 1);
-            });
+            setCurrentIndex((prev) => (loop ? (prev + 1) % carouselItems.length : Math.min(prev + 1, carouselItems.length - 1)));
         } else if (offset > DRAG_BUFFER || velocity > VELOCITY_THRESHOLD) {
-            // Voltar
-            setCurrentIndex((prev) => {
-                const next = prev - 1;
-                if (loop) {
-                    return next < 0 ? carouselItems.length - 1 : next;
-                }
-                return Math.max(next, 0);
-            });
+            setCurrentIndex((prev) => (loop ? (prev - 1 + carouselItems.length) % carouselItems.length : Math.max(prev - 1, 0)));
         }
     };
-
-    useEffect(() => {
-        if (autoplay && (!pauseOnHover || !isHovered)) {
-            const timer = setInterval(() => {
-                setCurrentIndex((prev) => {
-                    const next = prev + 1;
-                    if (loop) {
-                        if (next === carouselItems.length) {
-                            return 0;
-                        }
-                        return next;
-                    }
-                    return Math.min(next, carouselItems.length - 1);
-                });
-            }, autoplayDelay);
-            return () => clearInterval(timer);
-        }
-    }, [autoplay, autoplayDelay, isHovered, loop, pauseOnHover, carouselItems.length]);
-
 
     const dragProps = loop
         ? {}
@@ -243,16 +190,15 @@ export default function Carousel({
     return (
         <div
             ref={containerRef}
-            className={`relative bg-black mt-[4vh] overflow-hidden p-4 ${round
-                    ? "rounded-full border border-white"
-                    : "rounded-[24px] border border-[#222]"
-                }`}
+            className={`relative bg-black mt-[4vh] overflow-hidden p-4 ${round ? "rounded-full border border-white" : "rounded-[24px] border border-[#222]"}`}
             style={{
                 width: `${baseWidth}px`,
                 ...(round && { height: `${baseWidth}px` }),
             }}
         >
-            <p className="text-white flex justify-center items-center mt-[-12px]">Arraste para o lado  😀👉🏾</p>
+            <p className="text-white flex justify-center items-center mt-[-12px]">
+                {t("carousel.dragHint", "Arraste para o lado 😀👉🏾")}
+            </p>
             <motion.div
                 className="flex"
                 drag="x"
@@ -281,10 +227,7 @@ export default function Carousel({
                     return (
                         <motion.div
                             key={index}
-                            className={`relative shrink-0 flex flex-col ${round
-                                    ? "items-center justify-center text-center bg-[#060606] border-0"
-                                    : "bg-[#222] border border-[#222] rounded-[12px]"
-                                } overflow-hidden cursor-grab active:cursor-grabbing`}
+                            className={`relative shrink-0 flex flex-col ${round ? "items-center justify-center text-center bg-[#060606] border-0" : "bg-[#222] border border-[#222] rounded-[12px]"} overflow-hidden cursor-grab active:cursor-grabbing`}
                             style={{
                                 width: itemWidth,
                                 height: round ? itemWidth : 500,
@@ -293,11 +236,10 @@ export default function Carousel({
                             }}
                             transition={effectiveTransition}
                         >
-                            {/* Imagem */}
                             {!round && item.imageUrl && (
                                 <img
                                     src={item.imageUrl}
-                                    alt={item.title}
+                                    alt={t(item.title)}
                                     className="h-[160px] w-full object-cover"
                                 />
                             )}
@@ -308,9 +250,9 @@ export default function Carousel({
                                         <span className="flex h-[28px] w-[28px] items-center justify-center rounded-full bg-[#060606]">
                                             {item.icon}
                                         </span>
-                                        <h3 className="font-black text-white text-xl">{item.title}</h3>
+                                        <h3 className="font-black text-white text-xl">{t(item.title)}</h3>
                                     </div>
-                                    <p className="text-white text-base">{item.description}</p>
+                                    <p className="text-white text-base">{t(item.description)}</p>
                                 </div>
 
                                 {item.buttons?.length && (
@@ -319,12 +261,9 @@ export default function Carousel({
                                             <button
                                                 key={i}
                                                 onClick={btn.onClick}
-                                                className={`px-4 py-2 text-sm rounded font-medium flex items-center justify-center ${btn.variant === "secondary"
-                                                        ? "bg-white text-black font-bold hover:cursor-pointer transition-transform duration-200 hover:scale-115"
-                                                        : "bg-cyan-500 text-white font-bold hover:cursor-pointer transition-transform duration-200 hover:scale-115"
-                                                    }`}
+                                                className={`px-4 py-2 text-sm rounded font-medium flex items-center justify-center ${btn.variant === "secondary" ? "bg-white text-black font-bold hover:cursor-pointer transition-transform duration-200 hover:scale-115" : "bg-cyan-500 text-white font-bold hover:cursor-pointer transition-transform duration-200 hover:scale-115"}`}
                                             >
-                                                {btn.label}
+                                                {t(btn.label)}
                                                 {btn.icon}
                                             </button>
                                         ))}
@@ -336,22 +275,12 @@ export default function Carousel({
                 })}
             </motion.div>
 
-            <div
-                className={`flex w-full justify-center ${round ? "absolute z-20 bottom-12 left-1/2 -translate-x-1/2" : ""
-                    }`}
-            >
+            <div className={`flex w-full justify-center ${round ? "absolute z-20 bottom-12 left-1/2 -translate-x-1/2" : ""}`}>
                 <div className="mt-4 flex w-[150px] justify-between px-8">
                     {items.map((_, index) => (
                         <motion.div
                             key={index}
-                            className={`h-2 w-2 rounded-full cursor-pointer transition-colors duration-150 ${currentIndex % items.length === index
-                                    ? round
-                                        ? "bg-red"
-                                        : "bg-cyan-500"
-                                    : round
-                                        ? "bg-[#fff]"
-                                        : "bg-[#fff]"
-                                }`}
+                            className={`h-2 w-2 rounded-full cursor-pointer transition-colors duration-150 ${currentIndex % items.length === index ? round ? "bg-red" : "bg-cyan-500" : round ? "bg-[#fff]" : "bg-[#fff]"}`}
                             animate={{
                                 scale: currentIndex % items.length === index ? 1.2 : 1,
                             }}

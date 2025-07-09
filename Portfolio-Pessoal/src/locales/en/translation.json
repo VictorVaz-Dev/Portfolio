@@ -13,9 +13,41 @@
     "about":"About me",
     "intro":"Hello, my name is Victor Vaz and i am currently a ",
     "developer":"Front-end Developer",
-    "college":"i have a degree in internet systems, systems analysis and development and another knowledges, i worked in tecnologies like:",
+    "college":"I have a degree in internet systems, systems analysis and development and another knowledges, i'm working in tecnologies like:",
     "another":"and",
-    "more":"a lot of more"
+    "more":"a lot of more",
+    "api":"I like to create modern, responsive anda integrated applications with APIs and databases in real time.",
+    "social":"Contact me on my social networks😀:",
+    "dowload":"Curriculum",
+    "thanks":"Thanks"
+  },
+  "projects":{
+    "title":"My Projects",
+    "subtitle":"Here are some of my completed projects and others that are under construction:"
+  },
+  "projectButton":{
+    "repository":"Repository",
+    "showSite":"View site"
+  },
+  "project1":{
+    "title":"-Kart",
+    "subtitle":"Functional shopping cart design made with pure HTML, CSS and JavaScript. It has a responsive interface, allows you to manage products in the cart and saves data in real time with Firebase. Ideal for those who are learning e-commerce without frameworks. Technologies used: HTML, CSS, JS and Firebase."
+  },
+  "project2":{
+    "title":"-To-do list",
+    "subtitle":"Web application for task management, developed with React, TypeScript and Tailwind CSS. Allows you to add, edit, remove, and filter tasks, with real-time storage in Firebase Firestore. Ideal for practicing full stack development with a focus on productivity."
+  },
+  "project3":{
+    "title":"-Platform of registration",
+    "subtitle":"Web platform developed with HTML, CSS and JavaScript, using Vite. It has a responsive and interactive interface, with address search via ViaCEP API. Customer data is saved in real time in Firebase, ideal for learning full stack applications. Technologies used: React Vite, Firebase and APi ViaCEP."
+  },
+  "carousel": {
+    "repo": "Repository",
+    "site": "View site",
+    "dragHint": "Swipe to explore 😀👉🏾"
+  },
+  "skills":{
+    "skills":"Skills"
   }
 }
   

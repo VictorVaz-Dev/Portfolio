@@ -1,10 +1,13 @@
 import RotatingText from "../rotatingText/rotatingText"
 import { Marquee } from "../magicui/marquee"
+import { useTranslation } from 'react-i18next';
 
 export const Skills = () => {
+    const { t } = useTranslation();
+
     return (
         <div className="flex flex-col justify-center items-center mt-[6vh] mb-[10vh]" id="skills">
-            <h1 className="text-[3.5rem] text-white font-semibold  mb-[6vh]">Habilidades <RotatingText
+            <h1 className="text-[3.5rem] text-white font-semibold  mb-[6vh]">{t("skills.skills")}<RotatingText
                 texts={['Front-end', 'Dados', 'Backend']}
                 mainClassName="px-2 sm:px-2 md:px-3 bg-cyan-300 text-black overflow-hidden py-0.5 sm:py-1 md:py-2 justify-center rounded-lg"
                 staggerFrom={"last"}

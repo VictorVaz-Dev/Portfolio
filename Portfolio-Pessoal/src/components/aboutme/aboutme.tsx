@@ -30,7 +30,7 @@ export const Aboutme = () => {
 
         <BoxReveal boxColor={"#33cccc"} duration={0.8}>
           <h2 className="mt-[.5rem] text-white text-[1rem]">
-              {t("about.intro")}{""}<span className="font-semibold text-[#33cccc]">{t("about.developer")}</span>
+              {t("about.intro")}{""}<span className="font-semibold text-[#33cccc]">{t("about.developer")}.</span>
           </h2>
         </BoxReveal>
 
@@ -41,10 +41,10 @@ export const Aboutme = () => {
               <span className="font-semibold text-[#33cccc]">Tailwind</span>,{" "}
               <span className="font-semibold text-[#33cccc]">Vite</span>,{" "}
               <span className="font-semibold text-[#33cccc]">Firebase </span>{t("about.another")}<span className="font-semibold text-[#33cccc]"> {t("about.more")}</span>.<br/><br/>
-              Gosto de criar aplicações modernas, responsivas e integradas com
-              APIs e bancos de dados em tempo real.<br/><br/>
+              {t("about.api")}
+              <br/><br/>
 
-              Entre em contato comigo pelas minhas redes sociais😀:<br/>
+              {t("about.social")}<br/>
             </p>
           </div>
         </BoxReveal>
@@ -67,12 +67,12 @@ export const Aboutme = () => {
         <BoxReveal boxColor={"#33cccc"} duration={0.8}>
             <AnimatedSubscribeButton className="w-36 bg-[#33cccc] text-white" onClick={DownloadCV}>
                 <span className="group inline-flex items-center">
-                    Baixar CV
+                    {t("about.dowload")}
                     <ChevronRightIcon className="ml-1 size-4 transition-transform duration-300 group-hover:translate-x-1" />
                 </span>
                 <span className="group inline-flex items-center">
                     <CheckIcon className="mr-2 size-4" />
-                    Obrigado
+                    {t("about.thanks")}
                 </span>
             </AnimatedSubscribeButton>
         </BoxReveal>

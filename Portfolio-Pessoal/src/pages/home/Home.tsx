@@ -20,7 +20,7 @@ export const Home = () => {
   return (
     <div>
       {loading ? (
-        <VictorDevLoader /> // Exibe o loader enquanto 'loading' for true
+        <VictorDevLoader /> 
       ) : (
         <>
           <Header />

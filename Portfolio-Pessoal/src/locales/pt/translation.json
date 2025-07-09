@@ -15,6 +15,38 @@
     "developer":"Desenvolvedor Front-end",
     "college":"Tenho formação em Sistemas para internet, Análise e desenvolvimento de sistemas e entre outros conhecimentos, possuo experiência em tecnologias como",
     "another":" e entre",
-    "more":"outras mais"
+    "more":"outras mais",
+    "api":"Gosto de criar aplicações modernas, responsivas e integradas com APIs e bancos de dados em tempo real.",
+    "social":"Entre em contato comigo pelas minhas redes sociais😀:",
+    "dowload":"Baixar CV",
+    "thanks":"Obrigado"
+  },
+  "projects":{
+    "title":"Meus Projetos",
+    "subtitle":"Segue alguns dos meu projetos concluídos e outros que estão em construção:"
+  },
+  "projectButton":{
+    "repository":"Repositório",
+    "showSite":"Ver site"
+  },
+  "project1":{
+    "title":"-Carrinho",
+    "subtitle":"Projeto de carrinho de compras funcional feito com HTML, CSS e JavaScript puro. Possui interface responsiva, permite gerenciar produtos no carrinho e salva os dados em tempo real com Firebase. Ideal para quem está aprendendo e-commerce sem frameworks. Tecnologias usadas: HTML, CSS, JS e Firebase"
+  },
+  "project2":{
+    "title":"-Lista de afazeres",
+    "subtitle":"Aplicação web para gerenciamento de tarefas, desenvolvida com React, TypeScript e Tailwind CSS. Permite adicionar, editar, remover e filtrar tarefas, com armazenamento em tempo real no Firebase Firestore. Ideal para praticar desenvolvimento full stack com foco em produtividade."
+  },
+  "project3":{
+    "title":"-Plataforma de cadastro",
+    "subtitle":"Plataforma web desenvolvida com HTML, CSS e JavaScript, usando Vite. Possui interface responsiva e interativa, com busca de endereço via API do ViaCEP. Os dados dos clientes são salvos em tempo real no Firebase, ideal para aprendizado de aplicações full stack. Tecnologias usadas: React Vite, Firebase e APi ViaCEP"
+  },
+  "carousel": {
+    "repo": "Repositório",
+    "site": "Ver site",
+    "dragHint": "Arraste para o lado 😀👉🏾"
+  },
+  "skills":{
+    "skills":"Habilidades"
   }
 }
