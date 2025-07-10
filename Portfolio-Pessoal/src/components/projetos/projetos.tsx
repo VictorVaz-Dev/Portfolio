@@ -20,7 +20,7 @@ export const Projetos = () => {
 
     return (
         <div>
-            <div className="md:hidden mt-[10vh] flex flex-col justify-center items-center overflow-visible relative pr-6 pl-6" id="projetos">
+            <div className="md:hidden mt-[10vh] flex flex-col justify-center items-center overflow-visible relative pr-6 pl-6" id="project">
                 <BoxReveal boxColor={"#33cccc"} duration={0.8}>
                     <div className="m-auto justify-center items-center">
                         <h1 className="text-[3.5rem] text-white font-semibold">{t("projects.title")}</h1>

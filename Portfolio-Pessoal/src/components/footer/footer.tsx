@@ -4,7 +4,7 @@ export const Footer = () =>{
     const { t } = useTranslation();
 
     return(
-        <div className="w-full bg-[#0f0f0f] text-white shadow-md py-6 mt-[4vh]" id="contatos">
+        <div className="w-full bg-[#0f0f0f] text-white shadow-md py-6 mt-[4vh]" id="contact">
             <div className="max-w-6xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-4">
                 {/* Redes Sociais */}
                 <div className="flex space-x-4">

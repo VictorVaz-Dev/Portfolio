@@ -20,7 +20,7 @@ export const Aboutme = () => {
   const { t } = useTranslation();
 
   return (
-    <div id="sobre" className="flex flex-col md:flex-row justify-center items-center gap-x-20 md:mt-[10vh] m-auto pr-6 pl-6">
+    <div id="about" className="flex flex-col md:flex-row justify-center items-center gap-x-20 md:mt-[10vh] m-auto pr-6 pl-6">
       <div className="size-full max-w-lg items-center justify-center overflow-hidden pt-8">
         <BoxReveal boxColor={"#33cccc"} duration={0.8}>
           <p className="text-[3.5rem] text-white font-semibold">

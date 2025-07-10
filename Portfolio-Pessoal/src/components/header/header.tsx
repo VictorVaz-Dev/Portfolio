@@ -26,7 +26,7 @@ export const Header = () => {
         </div>
 
         {/* Botão Hamburguer */}
-        <div className="lg:hidden">
+        <div className="lg:hidden flex">
           <button onClick={toggleLanguage} className="mt-2 px-2 py-2 bg-cyan-300 text-white rounded hover:cursor-pointer">
             {t(i18n.language === 'pt' ? 'toggle.en' : 'toggle.pt')}
           </button>
