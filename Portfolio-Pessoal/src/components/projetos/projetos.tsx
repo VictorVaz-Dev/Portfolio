@@ -102,8 +102,8 @@ export const Projetos = () => {
                                     <p className="mt-[10px] mb-[10px]">{t("project2.subtitle")}</p>
                                 </div>
                                 <div className="flex gap-4">
-                                    <a className="flex items-center p-[8px] bg-white text-black rounded-[18px] hover:cursor-pointer hover:scale-115 transition-transform" href="https://github.com/VictorVaz-Dev/To-do-list" target="_blank">{t("projectButton.repository")}<FiCoffee size={18} /></a>
-                                    <a className="flex items-center p-[8px] bg-cyan-500 text-white rounded-[18px] hover:cursor-pointer hover:scale-115 transition-transform" href="https://to-do-list-iota-blue.vercel.app/" target="_blank">{t("projectButton.showSite")}<FiAirplay size={18} /></a>
+                                    <a className="flex items-center p-[8px] bg-white text-black rounded-[18px] hover:cursor-pointer hover:scale-115 transition-transform" href="https://github.com/VictorVaz-Dev/To-do-list" target="_blank">{t("projectButton.repository")}<FiCoffee className="ml-[5px]" size={18} /></a>
+                                    <a className="flex items-center p-[8px] bg-cyan-500 text-white rounded-[18px] hover:cursor-pointer hover:scale-115 transition-transform" href="https://to-do-list-iota-blue.vercel.app/" target="_blank">{t("projectButton.showSite")}<FiAirplay className="ml-[5px]" size={18} /></a>
                                 </div>
                             </div>
                         </div>
@@ -132,8 +132,8 @@ export const Projetos = () => {
                                     <p className="mt-[10px] mb-[10px]">{t("project3.subtitle")}</p>
                                 </div>
                                 <div className="flex gap-4">
-                                    <a className="flex items-center p-[8px] bg-white text-black rounded-[18px] hover:cursor-pointer hover:scale-115 transition-transform" href="https://github.com/VictorVaz-Dev/Plataforma-ESG" target="_blank">{t("projectButton.repository")}<FiCoffee size={18} /></a>
-                                    <a className="flex items-center p-[8px] bg-cyan-500 text-white rounded-[18px] hover:cursor-pointer hover:scale-115 transition-transform" href="https://plataforma-esg-inky.vercel.app" target="_blank">{t("projectButton.showSite")}<FiAirplay size={18} /></a>
+                                    <a className="flex items-center p-[8px] bg-white text-black rounded-[18px] hover:cursor-pointer hover:scale-115 transition-transform" href="https://github.com/VictorVaz-Dev/Plataforma-ESG" target="_blank">{t("projectButton.repository")}<FiCoffee className="ml-[5px]" size={18} /></a>
+                                    <a className="flex items-center p-[8px] bg-cyan-500 text-white rounded-[18px] hover:cursor-pointer hover:scale-115 transition-transform" href="https://plataforma-esg-inky.vercel.app" target="_blank">{t("projectButton.showSite")}<FiAirplay className="ml-[5px]" size={18} /></a>
                                 </div>
                             </div>
                         </div>
