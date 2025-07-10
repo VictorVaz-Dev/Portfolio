@@ -31,10 +31,7 @@ export const Skills = () => {
                         </div>
                         <div className="relative w-[400px] p-4 rounded-lg border-2 border-gray-950 bg-gray-950 text-white font-semibold flex justify-center items-center">
                             <p>Low code (Wordpress e Zoey)</p>
-                        </div>
-                        <div className="relative w-[400px] p-4 rounded-lg border-2 border-gray-950 bg-gray-950 text-white font-semibold flex justify-center items-center ">
-                            <p>C e C++</p>
-                        </div>
+                        </div> 
                         <div className="relative w-[400px] p-4 rounded-lg border-2 border-gray-950 bg-gray-950 text-white font-semibold flex justify-center items-center">
                             <p>Python</p>
                         </div>
@@ -49,9 +46,6 @@ export const Skills = () => {
                     </div>
                     <div className="relative w-[400px] p-4 rounded-lg border-2 border-gray-950 bg-gray-950 text-white font-semibold flex justify-center items-center">
                         <p>Low code (Wordpress e Zoey)</p>
-                    </div>
-                    <div className="relative w-[400px] p-4 rounded-lg border-2 border-gray-950 bg-gray-950 text-white font-semibold flex justify-center items-center ">
-                        <p>C e C++</p>
                     </div>
                     <div className="relative w-[400px] p-4 rounded-lg border-2 border-gray-950 bg-gray-950 text-white font-semibold flex justify-center items-center">
                         <p>Python</p>
