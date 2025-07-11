@@ -20,7 +20,7 @@ export const Projetos = () => {
 
     return (
         <div>
-            <div className="md:hidden mt-[10vh] flex flex-col justify-center items-center overflow-visible relative pr-6 pl-6" id="projects">
+            <div className="md:hidden mt-[10vh] flex flex-col justify-center items-center overflow-visible relative pr-6 pl-6">
                 <BoxReveal boxColor={"#33cccc"} duration={0.8}>
                     <div className="m-auto justify-center items-center">
                         <h1 className="text-[3.5rem] text-white font-semibold">{t("projects.title")}</h1>
@@ -43,7 +43,7 @@ export const Projetos = () => {
                 </BoxReveal>
             </div>
 
-            <div className="hidden md:block md:mt-[10vh] md:flex flex-col justify-center items-center overflow-visible relative pr-6 pl-6" id="projetos">
+            <div className="hidden md:block md:mt-[10vh] md:flex flex-col justify-center items-center overflow-visible relative pr-6 pl-6" id="projects">
                 <BoxReveal boxColor={"#33cccc"} duration={0.8}>
                     <div className="m-auto justify-center items-center">
                         <h1 className="text-[3.5rem] text-white font-semibold">{t("projects.title")}</h1>
