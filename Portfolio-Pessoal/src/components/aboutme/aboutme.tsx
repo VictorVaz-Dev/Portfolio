@@ -2,7 +2,7 @@ import { BoxReveal } from "../../components/magicui/box-reveal";
 import { AnimatedSubscribeButton } from "../../components/magicui/animated-subscribe-button";
 import { CheckIcon, ChevronRightIcon } from "lucide-react";
 import { useTranslation } from "react-i18next";
-import imagemDePerfil from "../../assets/fotoPerfil/imagem-de-perfil.jpeg";
+import imagemDePerfil from "../../assets/fotoPerfil/foto-de-perfil.png";
 import VictorCV from "../../assets/curriculum/Curriculo_Victor_vaz_2025.pdf"
 
 
